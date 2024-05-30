@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: url("../../assets/1.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    margin: 80px 20px 30px;
+    justify-content: center;
+}
+
+.search {
+    width: 800px;
+    height: 50px;
+    border: 2px solid rgb(146, 141, 141);
+    padding: 8px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.search:focus {
+    border: 2px solid black;
+}
+
+.grid-container {
+    display: grid;
+    width: 855px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-left: 320px;
+    border: 3px solid rgb(137, 134, 134);
+    border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.card {
+    border: 2px solid rgb(220, 221, 229);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    width: 200px;
+}
+
+.img {
+    width: 100px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.info {
+    background-color: rgb(95, 92, 90);
+    padding: 6px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+    justify-content: center;  
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.me{
+    color: rgb(59, 57, 57);
+    font-weight: 1000;
+    margin-left: 5px;
+}
+.but{
+    border: 1px solid black;
+    padding: 4px;
+    width: 70px;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-items: center;
+}
+.details{
+    background: white;   
+    padding: 10px;
+    margin: 120px 200px;
+    width: 70vw;
+    height: 60vh;
+    border: 1px solid gray;
+    border-radius: 6px; 
+}
+.desc{
+    color: rgb(97, 95, 95);
+    font-weight: 500;
+}
+.label{
+    color: rgb(76, 74, 74);
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: 1000;
+}
